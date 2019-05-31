@@ -1,11 +1,11 @@
-BASE="$(build.sourcesdirectory)/app/build/outputs/apk"
+printenv | rgep "build"
+
+BASE="./app/build/outputs/apk"
 
 # $BASE is path to outputs/apk folder - for compatibility we don't change it but use relative path
 OUTPUTS=$BASE/..
 
-# pushd $OUTPUTS
-cd $BASE
-cd ..
+pushd $OUTPUTS
 
 MAPPING_TOTAL=$(find -E . -iregex ".+mapping.+mapping\.txt" | wc -l)
 if (($MAPPING_TOTAL > 0)); then
