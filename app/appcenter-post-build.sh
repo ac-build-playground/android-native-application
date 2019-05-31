@@ -1,5 +1,5 @@
-echo $(build.sourcesdirectory)
-echo "$(build.sourcesdirectory)"
+echo $build_sourcesdirectory
+echo "$Build.SourcesDirectory"
 
 BASE="$(build.sourcesdirectory)/app/build/outputs/apk"
 
