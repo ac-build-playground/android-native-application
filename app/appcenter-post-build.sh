@@ -1,6 +1,6 @@
-printenv | rgep "build"
+printenv | grep "build"
 
-BASE="./app/build/outputs/apk"
+BASE="$build_sourcesdirectory/app/build/outputs/apk"
 
 # $BASE is path to outputs/apk folder - for compatibility we don't change it but use relative path
 OUTPUTS=$BASE/..
