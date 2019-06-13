@@ -19,6 +19,22 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions "mode"
+
+    productFlavors {
+        demo {
+            dimension "mode"
+        }
+
+        internal {
+            dimension "mode"
+        }
     }
 }
 
