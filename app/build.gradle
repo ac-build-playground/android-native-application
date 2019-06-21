@@ -20,6 +20,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    productFlavors {
+        live {
+
+        }
+        internal {
+            signingConfig signingConfigs.internalConfig
+        }
+    }
 }
 
 dependencies {
