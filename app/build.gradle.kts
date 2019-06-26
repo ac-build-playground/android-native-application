@@ -25,10 +25,10 @@ android {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
         }
-        /*create("test") {
+        create("test") {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
-        }*/
+        }
     }
 
     flavorDimensions("implementation")
@@ -42,10 +42,10 @@ android {
             setDimension("implementation")
             applicationId = "androidnative.evkhramk.com.android_native_application_paid"
         }
-        /*create("internal") {
+        create("internal") {
             setDimension("implementation")
             applicationId = "androidnative.evkhramk.com.android_native_application_internal"
-        }*/
+        }
     }
 }
 
