@@ -32,11 +32,15 @@ android {
     productFlavors {
         create("free") {
             setDimension("implementation")
-            applicationId = "androidnative.evkhramk.com.android_native_application"
+            applicationId = "androidnative.evkhramk.com.android_native_application_free"
         }
         create("paid") {
             setDimension("implementation")
-            applicationId = "androidnative.evkhramk.com.android_native_application"
+            applicationId = "androidnative.evkhramk.com.android_native_application_paid"
+        }
+        create("internal") {
+            setDimension("implementation")
+            applicationId = "androidnative.evkhramk.com.android_native_application_internal"
         }
     }
 }
