@@ -26,19 +26,6 @@ android {
             proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
         }
     }
-
-    flavorDimensions("implementation")
-
-    productFlavors {
-        create("free") {
-            setDimension("implementation")
-            applicationId = "androidnative.evkhramk.com.android_native_application"
-        }
-        create("paid") {
-            setDimension("implementation")
-            applicationId = "androidnative.evkhramk.com.android_native_application"
-        }
-    }
 }
 
 dependencies {
