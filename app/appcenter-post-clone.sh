@@ -1,4 +1,4 @@
-for i in {1..10}
+for i in {1..1000}
 do
   clear
   tput cup 5 5
