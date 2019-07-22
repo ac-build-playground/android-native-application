@@ -1,4 +1,6 @@
-apply plugin: 'com.android.application'
+def plug = 'com.android.application'
+
+apply plugin: plug
 
 apply plugin: 'kotlin-android'
 
